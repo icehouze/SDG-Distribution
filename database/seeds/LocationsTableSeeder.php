@@ -1,5 +1,6 @@
 <?php
 
+use App\Location;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +13,6 @@ class LocationsTableSeeder extends Seeder
      */
     public function run()
     {
-	 factory(App\Location::class, 50)->create();
+	 factory(Location::class, 50)->create();
     }
 }

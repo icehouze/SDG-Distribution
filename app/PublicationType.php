@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class PublicationType extends Model
 {
-    protected $fillable->('type');
-
-    public function publications() {
-    	return $this->hasMany('App\Publication');
+	// $publicationType->publication;
+    public function publication() 
+    {
+    	return $this->hasMany(Publication::class);
     }
 }

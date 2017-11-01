@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +19,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('locations', 'LocationController');
+Route::get('publications', 'PublicationController@index');
+Route::get('/publications/create', 'PublicationController@create');
+
 

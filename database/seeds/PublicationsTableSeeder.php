@@ -1,5 +1,6 @@
 <?php
 
+use App\Publication;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +13,6 @@ class PublicationsTableSeeder extends Seeder
      */
     public function run()
 	    {
-		 factory(App\Publication::class, 50)->create();
+		 factory(Publication::class, 50)->create();
 	    }
 }

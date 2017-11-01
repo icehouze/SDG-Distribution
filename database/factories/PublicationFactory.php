@@ -8,6 +8,6 @@ $factory->define(App\Publication::class, function (Faker $faker) {
 		'publication_type_id' => $faker->numberBetween($min = 1, $max = 3),
 		'year' => $faker->year($max = 'now'),
 		'print' => $faker->optional()->numberBetween($min = 1, $max = 2),
-		'cover' => $faker->optional()->text($maxNbChars = 25)
+		'cover' => $faker->optional()->realText($maxNbChars = 25)
 	];
 });
